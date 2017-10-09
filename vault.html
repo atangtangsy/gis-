@@ -32,10 +32,10 @@
         </tr>
         <tr>
             <td>
-                <input type="number" min="1" max="100" id="chessboardM" value="4">
+                <input type="number" min="3" max="100" id="chessboardM" value="3">
             </td>
             <td>
-                <input type="number" min="1" max="100" id="chessboardN" value="4">
+                <input type="number" min="3" max="100" id="chessboardN" value="3">
             </td>
             <td>
                 <input type="number" min="1" max="100" id="originX" value="0">
@@ -46,7 +46,7 @@
         </tr>
         <tr>
             <td>
-                <input type="button" id="cal" onclick="getResult()" value="计算">
+                <input type="button" id="cal" onclick="getResult()" value="result">
             </td>
         </tr>
     </table>
@@ -104,8 +104,8 @@ function getResult() {
                 //document.write(finalRoad[i][j]+"<br>");
                 document.getElementById("result").innerHTML += finalRoad[i][j]+"<br>";
             } else {
-                document.getElementById("result").innerHTML += finalRoad[i][j] + ">>";
-                //document.write(finalRoad[i][j]+">>")
+                document.getElementById("result").innerHTML += finalRoad[i][j] + "->";
+                //document.write(finalRoad[i][j]+"->")
             }
         }
         
@@ -190,5 +190,5 @@ function Iteration(x, y, t) {
     </script>
 </body>
 
-</html>"# gis-" 
+</html>
 "# gis-" 
